@@ -25,6 +25,13 @@ public class FirstView extends View{
 
 	@Override
 	protected void onDraw(Canvas canvas) {
+
+		int x = 0,y = 0;
+		x += 10;
+		y += 10;
+		canvas.translate(x, y);
+
+
 Log.w( "DEBUG_DATA", "onDraw1" );
 		// 背景、半透明
 		canvas.drawColor(Color.argb(125, 0, 0, 255));
