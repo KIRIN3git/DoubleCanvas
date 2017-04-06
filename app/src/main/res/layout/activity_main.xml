@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shinji.doublecanvas.MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/linearLayout1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+        <com.example.shinji.doublecanvas.FirstView
+            android:id="@+id/first_view"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.example.shinji.doublecanvas.SecondView
+            android:id="@+id/second_view"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/label"
+            android:textSize="20sp"
+            android:textColor="#cccccc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp"/>
+
+        <Button
+            android:text="Button"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="80dp"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="88dp"/>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
